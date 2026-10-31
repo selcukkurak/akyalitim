@@ -7,6 +7,7 @@ const whatsappHref = "https://wa.me/905380524492?text=Merhaba%2C%20su%20yal%C4%B
 const services = [
   {
     number: "01",
+    slug: "cati-teras-su-yalitimi",
     title: "Çatı ve teras yalıtımı",
     text: "Yağmur ve su sızıntılarına karşı çatı ve terasınızın mevcut durumuna uygun yalıtım çözümü.",
     icon: "⌂",
@@ -15,6 +16,7 @@ const services = [
   },
   {
     number: "02",
+    slug: "temel-perde-su-yalitimi",
     title: "Temel ve perde yalıtımı",
     text: "Yapının toprakla temas eden bölümlerinde suyun ilerlemesini önlemeye yönelik uygulamalar.",
     icon: "▤",
@@ -23,6 +25,7 @@ const services = [
   },
   {
     number: "03",
+    slug: "balkon-banyo-su-yalitimi",
     title: "Balkon ve ıslak hacimler",
     text: "Banyo, balkon ve benzeri alanlarda su kaçaklarının kaynağına yönelik izolasyon çalışmaları.",
     icon: "◉",
@@ -57,10 +60,21 @@ const faqs = [
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
+  "@id": "https://xn--akyaltm-vfbb.com/#business",
   name: "AK Yalıtım Hizmetleri",
+  url: "https://xn--akyaltm-vfbb.com/",
+  image: "https://images.unsplash.com/photo-1674485117944-08d58861b2ba?auto=format&fit=crop&w=1200&q=85",
+  logo: "https://xn--akyaltm-vfbb.com/icon.svg",
   description:
     "İstanbul Avrupa Yakası'nda çatı, teras, temel, balkon ve ıslak hacimler için su yalıtımı ve izolasyon hizmetleri. Ücretsiz keşif.",
   telephone: "+90-538-052-44-92",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+90-538-052-44-92",
+    contactType: "customer service",
+    areaServed: "TR-34",
+    availableLanguage: "Turkish",
+  },
   areaServed: {
     "@type": "AdministrativeArea",
     name: "İstanbul Avrupa Yakası",
@@ -113,7 +127,7 @@ export default function Home() {
         <nav className="desktop-nav" aria-label="Ana menü">
           <a href="#hizmetler">Hizmetler</a>
           <a href="#surec">Nasıl çalışıyoruz?</a>
-          <a href="#sss">Sık sorulanlar</a>
+          <a href="/rehber/su-sizintisi">Su sızıntısı rehberi</a>
         </nav>
         <a className="header-cta" href={whatsappHref} target="_blank" rel="noreferrer">
           Ücretsiz keşif <span aria-hidden="true">↗</span>
@@ -124,7 +138,8 @@ export default function Home() {
         <section className="hero section-wrap">
           <div className="hero-copy">
             <p className="eyebrow"><span /> AK YALITIM HİZMETLERİ</p>
-            <h1>Suya karşı sağlam,<br /><em>yarınlara hazır.</em></h1>
+            <h1>İstanbul Avrupa Yakası&apos;nda<br /><em>su yalıtımı.</em></h1>
+            <p className="hero-tagline">Suya karşı sağlam, yarınlara hazır.</p>
             <p className="hero-description">
               İstanbul Avrupa Yakası&apos;nda çatıdan temele, su yalıtımı için doğru çözümü birlikte belirleyelim. Önce yerinde inceleme, sonra ihtiyacınıza uygun uygulama.
             </p>
@@ -211,11 +226,24 @@ export default function Home() {
                   <div className="service-card-top"><span className="service-icon" aria-hidden="true">{service.icon}</span><span className="service-kicker">AK YALITIM HİZMETLERİ</span></div>
                   <h3>{service.title}</h3>
                   <p>{service.text}</p>
-                  <a href={whatsappHref} target="_blank" rel="noreferrer" aria-label={`${service.title} için ücretsiz keşif iste`}>Keşif iste <span aria-hidden="true">↗</span></a>
+                  <a href={`/hizmetler/${service.slug}`} aria-label={`${service.title} hakkında bilgi al`}>Hizmet detayları <span aria-hidden="true">↗</span></a>
                 </div>
               </article>
             ))}
           </div>
+        </section>
+
+        <section className="guides-section section-wrap" aria-labelledby="guides-title">
+          <div className="guides-copy">
+            <p className="eyebrow"><span /> BİLGİ REHBERİ</p>
+            <h2 id="guides-title">Su sızıntısında<br /><em>ilk adımlar.</em></h2>
+            <p>Nem, leke veya damlama fark ettiğinizde belirtileri nasıl not edeceğinizi, güvenliği nasıl önceleyeceğinizi ve keşif öncesi neleri paylaşabileceğinizi öğrenin.</p>
+            <a className="text-link" href="/rehber/su-sizintisi">Su sızıntısı rehberini okuyun <span aria-hidden="true">↗</span></a>
+          </div>
+          <a className="guide-card" href="/rehber/su-sizintisi">
+            <span className="guide-card-image" aria-hidden="true" />
+            <span className="guide-card-content"><small>AK YALITIM · PRATİK BİLGİ</small><b>Evde su sızıntısı belirtileri: ne yapmalı?</b><span>Güvenlik, gözlem ve keşif öncesi hazırlık <i aria-hidden="true">↗</i></span></span>
+          </a>
         </section>
 
         <section className="approach-section" id="surec">
@@ -291,7 +319,7 @@ export default function Home() {
             <span className="brand-name">AK<span>YALITIM</span><small>SU YALITIMI & İZOLASYON</small></span>
           </a>
           <p>İstanbul Avrupa Yakası&apos;nda su yalıtımı için AK Yalıtım Hizmetleri. Ücretsiz keşif talebi için bizi arayın.</p>
-          <div className="footer-links"><a href="#hizmetler">Hizmetler</a><a href="#sss">Sık sorulanlar</a><a href="https://www.instagram.com/ak.yalitim/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
+          <div className="footer-links"><a href="#hizmetler">Hizmetler</a><a href="/rehber/su-sizintisi">Su sızıntısı rehberi</a><a href="#sss">Sık sorulanlar</a><a href="https://www.instagram.com/ak.yalitim/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
         </div>
         <div className="footer-bottom section-wrap"><span>© {new Date().getFullYear()} AK Yalıtım Hizmetleri</span><span>Su yalıtımı · İstanbul Avrupa Yakası</span></div>
       </footer>
