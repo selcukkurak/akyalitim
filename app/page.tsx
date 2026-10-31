@@ -60,11 +60,11 @@ const faqs = [
 const businessSchema = {
   "@context": "https://schema.org",
   "@type": "HomeAndConstructionBusiness",
-  "@id": "https://xn--akyaltm-vfbb.com/#business",
+  "@id": "https://www.xn--akyaltm-vfbb.com/#business",
   name: "AK Yalıtım Hizmetleri",
-  url: "https://xn--akyaltm-vfbb.com/",
+  url: "https://www.xn--akyaltm-vfbb.com/",
   image: "https://images.unsplash.com/photo-1674485117944-08d58861b2ba?auto=format&fit=crop&w=1200&q=85",
-  logo: "https://xn--akyaltm-vfbb.com/icon.svg",
+  logo: "https://www.xn--akyaltm-vfbb.com/icon.svg",
   description:
     "İstanbul Avrupa Yakası'nda çatı, teras, temel, balkon ve ıslak hacimler için su yalıtımı ve izolasyon hizmetleri. Ücretsiz keşif.",
   telephone: "+90-538-052-44-92",

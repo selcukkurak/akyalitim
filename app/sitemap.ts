@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { servicePages } from "./service-content";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://xn--akyaltm-vfbb.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.xn--akyaltm-vfbb.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();

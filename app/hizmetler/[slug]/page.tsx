@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { servicePages } from "../../service-content";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://xn--akyaltm-vfbb.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.xn--akyaltm-vfbb.com";
 const phoneHref = "tel:+905380524492";
 const whatsappHref = "https://wa.me/905380524492?text=Merhaba%2C%20su%20yal%C4%B1t%C4%B1m%C4%B1%20i%C3%A7in%20%C3%BCcretsiz%20ke%C5%9Fif%20almak%20istiyorum.";
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://xn--akyaltm-vfbb.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.xn--akyaltm-vfbb.com";
 const articleUrl = `${siteUrl}/rehber/su-sizintisi`;
 
 export const metadata: Metadata = {
