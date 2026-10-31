@@ -65,7 +65,7 @@ const businessSchema = {
   alternateName: "AK Yalıtım",
   url: "https://www.xn--akyaltm-vfbb.com/",
   image: "https://images.unsplash.com/photo-1674485117944-08d58861b2ba?auto=format&fit=crop&w=1200&q=85",
-  logo: "https://www.xn--akyaltm-vfbb.com/icon.svg",
+  logo: "https://www.xn--akyaltm-vfbb.com/ak-yalitim-logo.svg",
   description:
     "İstanbul Avrupa Yakası'nda çatı, teras, temel, balkon ve ıslak hacimler için su yalıtımı ve izolasyon hizmetleri. Ücretsiz keşif.",
   telephone: "+90-538-052-44-92",
@@ -129,13 +129,7 @@ export default function Home() {
 
       <header className="site-header">
         <a className="brand" href="#anasayfa" aria-label="AK Yalıtım ana sayfa">
-          <span className="brand-mark" aria-hidden="true">
-            <svg viewBox="0 0 42 42" fill="none">
-              <path d="M21 4C15 13 9 19 9 26a12 12 0 0 0 24 0c0-7-6-13-12-22Z" fill="currentColor" />
-              <path d="M16 27c0 3 2 5 5 6" stroke="#153a34" strokeWidth="2.2" strokeLinecap="round" />
-            </svg>
-          </span>
-          <span className="brand-name">AK<span>YALITIM</span><small>SU YALITIMI & İZOLASYON</small></span>
+          <Image className="brand-logo" src="/ak-yalitim-logo.svg" alt="AK Yalıtım Su Yalıtımı" width={190} height={127} priority />
         </a>
         <nav className="desktop-nav" aria-label="Ana menü">
           <a href="#hizmetler">Hizmetler</a>
@@ -328,9 +322,8 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="footer-main section-wrap">
-          <a className="brand brand-footer" href="#anasayfa">
-            <span className="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 42" fill="none"><path d="M21 4C15 13 9 19 9 26a12 12 0 0 0 24 0c0-7-6-13-12-22Z" fill="currentColor"/><path d="M16 27c0 3 2 5 5 6" stroke="#153a34" strokeWidth="2.2" strokeLinecap="round"/></svg></span>
-            <span className="brand-name">AK<span>YALITIM</span><small>SU YALITIMI & İZOLASYON</small></span>
+          <a className="brand brand-footer brand-image" href="#anasayfa">
+            <Image className="brand-logo" src="/ak-yalitim-logo.svg" alt="AK Yalıtım Su Yalıtımı" width={190} height={127} />
           </a>
           <p>İstanbul Avrupa Yakası&apos;nda su yalıtımı için AK Yalıtım Hizmetleri. Ücretsiz keşif talebi için bizi arayın.</p>
           <div className="footer-links"><a href="#hizmetler">Hizmetler</a><a href="/rehber/su-sizintisi">Su sızıntısı rehberi</a><a href="#sss">Sık sorulanlar</a><a href="https://www.instagram.com/ak.yalitim/" target="_blank" rel="noreferrer">Instagram ↗</a></div>

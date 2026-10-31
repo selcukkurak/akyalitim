@@ -38,6 +38,7 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   category: "construction",
+  icons: { icon: "/ak-yalitim-logo.svg", shortcut: "/ak-yalitim-logo.svg" },
 };
 
 export const viewport: Viewport = {
