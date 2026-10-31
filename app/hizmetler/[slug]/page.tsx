@@ -93,7 +93,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       </div>
       <header className="site-header">
         <Link className="brand" href="/" aria-label="AK Yalıtım ana sayfa">
-          <Image className="brand-logo" src="/ak-yalitim-logo.svg" alt="AK Yalıtım Su Yalıtımı" width={190} height={127} priority />
+          <Image className="brand-logo" src="/WhatsApp%20Image%202026-10-31%20at%2013.32.38.jpeg" alt="AK Yalıtım Su Yalıtımı" width={1536} height={1024} priority />
         </Link>
         <nav className="desktop-nav" aria-label="Ana menü">
           <Link href="/#hizmetler">Hizmetler</Link>
@@ -167,7 +167,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
       <footer className="site-footer">
         <div className="footer-main section-wrap">
-          <Link className="brand brand-footer brand-image" href="/"><Image className="brand-logo" src="/ak-yalitim-logo.svg" alt="AK Yalıtım Su Yalıtımı" width={190} height={127} /></Link>
+          <Link className="brand brand-footer brand-image" href="/"><Image className="brand-logo" src="/WhatsApp%20Image%202026-10-31%20at%2013.32.38.jpeg" alt="AK Yalıtım Su Yalıtımı" width={1536} height={1024} /></Link>
           <p>AK Yalıtım Hizmetleri · İstanbul Avrupa Yakası su yalıtımı ve izolasyon.</p>
           <div className="footer-links"><Link href="/#hizmetler">Tüm hizmetler</Link><Link href="/rehber/su-sizintisi">Su sızıntısı rehberi</Link><a href="https://www.instagram.com/ak.yalitim/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
         </div>

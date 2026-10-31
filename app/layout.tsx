@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   category: "construction",
-  icons: { icon: "/ak-yalitim-logo.svg", shortcut: "/ak-yalitim-logo.svg" },
+  icons: { icon: "/WhatsApp%20Image%202026-10-31%20at%2013.32.38.jpeg", shortcut: "/WhatsApp%20Image%202026-10-31%20at%2013.32.38.jpeg" },
 };
 
 export const viewport: Viewport = {

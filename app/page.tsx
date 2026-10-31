@@ -65,7 +65,7 @@ const businessSchema = {
   alternateName: "AK Yalıtım",
   url: "https://www.xn--akyaltm-vfbb.com/",
   image: "https://images.unsplash.com/photo-1674485117944-08d58861b2ba?auto=format&fit=crop&w=1200&q=85",
-  logo: "https://www.xn--akyaltm-vfbb.com/ak-yalitim-logo.svg",
+  logo: "https://www.xn--akyaltm-vfbb.com/WhatsApp%20Image%202026-10-31%20at%2013.32.38.jpeg",
   description:
     "İstanbul Avrupa Yakası'nda çatı, teras, temel, balkon ve ıslak hacimler için su yalıtımı ve izolasyon hizmetleri. Ücretsiz keşif.",
   telephone: "+90-538-052-44-92",
@@ -129,7 +129,7 @@ export default function Home() {
 
       <header className="site-header">
         <a className="brand" href="#anasayfa" aria-label="AK Yalıtım ana sayfa">
-          <Image className="brand-logo" src="/ak-yalitim-logo.svg" alt="AK Yalıtım Su Yalıtımı" width={190} height={127} priority />
+          <Image className="brand-logo" src="/WhatsApp%20Image%202026-10-31%20at%2013.32.38.jpeg" alt="AK Yalıtım Su Yalıtımı" width={1536} height={1024} priority />
         </a>
         <nav className="desktop-nav" aria-label="Ana menü">
           <a href="#hizmetler">Hizmetler</a>
@@ -323,7 +323,7 @@ export default function Home() {
       <footer className="site-footer">
         <div className="footer-main section-wrap">
           <a className="brand brand-footer brand-image" href="#anasayfa">
-            <Image className="brand-logo" src="/ak-yalitim-logo.svg" alt="AK Yalıtım Su Yalıtımı" width={190} height={127} />
+            <Image className="brand-logo" src="/WhatsApp%20Image%202026-10-31%20at%2013.32.38.jpeg" alt="AK Yalıtım Su Yalıtımı" width={1536} height={1024} />
           </a>
           <p>İstanbul Avrupa Yakası&apos;nda su yalıtımı için AK Yalıtım Hizmetleri. Ücretsiz keşif talebi için bizi arayın.</p>
           <div className="footer-links"><a href="#hizmetler">Hizmetler</a><a href="/rehber/su-sizintisi">Su sızıntısı rehberi</a><a href="#sss">Sık sorulanlar</a><a href="https://www.instagram.com/ak.yalitim/" target="_blank" rel="noreferrer">Instagram ↗</a></div>
