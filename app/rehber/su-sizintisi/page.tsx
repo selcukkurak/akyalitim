@@ -40,7 +40,7 @@ export default function WaterLeakGuidePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(articleSchema) }} />
       <div className="announcement"><span className="announcement-dot" aria-hidden="true" />İstanbul Avrupa Yakası · Ücretsiz keşif<a href="tel:+905380524492">Hemen arayın: 0538 052 44 92</a></div>
       <header className="site-header">
-        <Link className="brand" href="/" aria-label="AK Yalıtım ana sayfa"><Image className="brand-logo" src="/WhatsApp%20Image%202026-10-31%20at%2013.32.38.jpeg" alt="AK Yalıtım Su Yalıtımı" width={1536} height={1024} priority /></Link>
+        <Link className="brand" href="/" aria-label="AK Yalıtım ana sayfa"><Image className="brand-logo" src="/ak-yalitim-logo-transparent.png" alt="AK Yalıtım Su Yalıtımı" width={1536} height={1024} priority /></Link>
         <nav className="desktop-nav" aria-label="Ana menü"><Link href="/#hizmetler">Hizmetler</Link><Link href="/rehber/su-sizintisi">Su sızıntısı rehberi</Link><Link href="/#iletisim">İletişim</Link></nav>
         <a className="header-cta" href="https://wa.me/905380524492?text=Merhaba%2C%20su%20yal%C4%B1t%C4%B1m%C4%B1%20i%C3%A7in%20%C3%BCcretsiz%20ke%C5%9Fif%20almak%20istiyorum." target="_blank" rel="noreferrer">Ücretsiz keşif <span aria-hidden="true">↗</span></a>
       </header>
@@ -96,7 +96,7 @@ export default function WaterLeakGuidePage() {
           </div>
         </article>
       </main>
-      <footer className="site-footer"><div className="footer-main section-wrap"><Link className="brand brand-footer brand-image" href="/"><Image className="brand-logo" src="/WhatsApp%20Image%202026-10-31%20at%2013.32.38.jpeg" alt="AK Yalıtım Su Yalıtımı" width={1536} height={1024} /></Link><p>AK Yalıtım Hizmetleri · İstanbul Avrupa Yakası su yalıtımı ve izolasyon.</p><div className="footer-links"><Link href="/#hizmetler">Hizmetler</Link><Link href="/">Ana sayfa</Link><a href="https://www.instagram.com/ak.yalitim/" target="_blank" rel="noreferrer">Instagram ↗</a></div></div><div className="footer-bottom section-wrap"><span>© {new Date().getFullYear()} AK Yalıtım Hizmetleri</span><span>Su yalıtımı · İstanbul Avrupa Yakası</span></div></footer>
+      <footer className="site-footer"><div className="footer-main section-wrap"><Link className="brand brand-footer brand-image" href="/"><Image className="brand-logo" src="/ak-yalitim-logo-transparent.png" alt="AK Yalıtım Su Yalıtımı" width={1536} height={1024} /></Link><p>AK Yalıtım Hizmetleri · İstanbul Avrupa Yakası su yalıtımı ve izolasyon.</p><div className="footer-links"><Link href="/#hizmetler">Hizmetler</Link><Link href="/">Ana sayfa</Link><a href="https://www.instagram.com/ak.yalitim/" target="_blank" rel="noreferrer">Instagram ↗</a></div></div><div className="footer-bottom section-wrap"><span>© {new Date().getFullYear()} AK Yalıtım Hizmetleri</span><span>Su yalıtımı · İstanbul Avrupa Yakası</span></div></footer>
     </>
   );
 }
