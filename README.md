@@ -12,6 +12,7 @@ Turkish-language website for AK Yalıtım Hizmetleri, based on the public Instag
 
 - The canonical domain is configured as `https://www.xn--akyaltm-vfbb.com` (the ASCII/Punycode form of `https://www.akyalıtım.com`, matching the live site's www redirect). Set the same value as `NEXT_PUBLIC_SITE_URL` in the Vercel Production environment.
 - Verify the domain in Google Search Console and Bing Webmaster Tools, then submit `/sitemap.xml`.
+- After each production deploy, use Search Console's URL Inspection for the homepage and the three `/hizmetler/...` URLs, then request indexing. Check the Pages/Indexing report for crawl or canonical issues before expecting search impressions.
 - Create/claim the Google Business Profile and use the exact same business name, phone, service area, and website. Add the real address only if customers are served there.
 - Replace/confirm service details and geographic coverage with the business owner. Add real, permission-cleared project photographs with descriptive alt text when available. Do not publish invented testimonials, guarantees, or project statistics.
 - Ensure the phone, WhatsApp, and domain are correct, and add the site to relevant local directories consistently.

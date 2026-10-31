@@ -76,6 +76,7 @@ button,a,summary{-webkit-tap-highlight-color:transparent}
 
 /* Search-focused landing pages and helpful reading */
 .hero-tagline{margin:12px 0 0;color:#9a6b27;font-family:var(--font-display);font-size:clamp(16px,2vw,21px);font-weight:700;letter-spacing:-.04em}
+.hero-copy .hero-location-heading{margin:11px 0 0;font-family:var(--font-display);font-size:clamp(17px,2.1vw,23px);font-weight:700;letter-spacing:-.045em;color:#68776f}.hero-copy .hero-location-heading em{font-style:normal;color:#a87937}
 .service-card-content>h3{margin-top:14px}
 .guides-section{padding:10px 0 105px;display:grid;grid-template-columns:.75fr 1.25fr;align-items:center;gap:8%}
 .guides-copy h2{margin:0;font-family:var(--font-display);font-size:clamp(39px,4.2vw,52px);line-height:1.04;letter-spacing:-.075em}.guides-copy h2 em{font-style:normal;color:#b7843e}.guides-copy>p:not(.eyebrow){max-width:380px;color:#6e7973;font-size:12px;line-height:1.85;margin:15px 0}.guide-card{min-height:235px;display:grid;grid-template-columns:42% 1fr;background:#fffefa;border:1px solid #e8e9e3;overflow:hidden;transition:transform .25s,box-shadow .25s}.guide-card:hover{transform:translateY(-4px);box-shadow:0 16px 38px rgba(27,54,46,.08)}

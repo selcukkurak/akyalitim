@@ -62,6 +62,7 @@ const businessSchema = {
   "@type": "HomeAndConstructionBusiness",
   "@id": "https://www.xn--akyaltm-vfbb.com/#business",
   name: "AK Yalıtım Hizmetleri",
+  alternateName: "AK Yalıtım",
   url: "https://www.xn--akyaltm-vfbb.com/",
   image: "https://images.unsplash.com/photo-1674485117944-08d58861b2ba?auto=format&fit=crop&w=1200&q=85",
   logo: "https://www.xn--akyaltm-vfbb.com/icon.svg",
@@ -99,6 +100,17 @@ const faqSchema = {
   })),
 };
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.xn--akyaltm-vfbb.com/#website",
+  url: "https://www.xn--akyaltm-vfbb.com/",
+  name: "AK Yalıtım Hizmetleri",
+  alternateName: "AK Yalıtım",
+  inLanguage: "tr-TR",
+  publisher: { "@id": "https://www.xn--akyaltm-vfbb.com/#business" },
+};
+
 function jsonLd(data: object) {
   return JSON.stringify(data).replace(/</g, "\\u003c");
 }
@@ -107,6 +119,7 @@ export default function Home() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(businessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(websiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
       <div className="announcement">
         <span className="announcement-dot" aria-hidden="true" />
@@ -138,7 +151,8 @@ export default function Home() {
         <section className="hero section-wrap">
           <div className="hero-copy">
             <p className="eyebrow"><span /> AK YALITIM HİZMETLERİ</p>
-            <h1>İstanbul Avrupa Yakası&apos;nda<br /><em>su yalıtımı.</em></h1>
+            <h1>AK Yalıtım Hizmetleri</h1>
+            <p className="hero-location-heading">İstanbul Avrupa Yakası&apos;nda <em>su yalıtımı</em></p>
             <p className="hero-tagline">Suya karşı sağlam, yarınlara hazır.</p>
             <p className="hero-description">
               İstanbul Avrupa Yakası&apos;nda çatıdan temele, su yalıtımı için doğru çözümü birlikte belirleyelim. Önce yerinde inceleme, sonra ihtiyacınıza uygun uygulama.

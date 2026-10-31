@@ -6,7 +6,7 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.xn--akyaltm-vfb
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "İstanbul Avrupa Yakası Su Yalıtımı | AK Yalıtım",
+    default: "AK Yalıtım Hizmetleri | İstanbul Su Yalıtımı",
     template: "%s | AK Yalıtım",
   },
   description:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: "tr_TR",
     url: "/",
     siteName: "AK Yalıtım",
-    title: "İstanbul Avrupa Yakası Su Yalıtımı | AK Yalıtım",
+    title: "AK Yalıtım Hizmetleri | İstanbul Su Yalıtımı",
     description:
       "İstanbul Avrupa Yakası'nda su yalıtımı ve izolasyon için ücretsiz keşif talep edin.",
     images: [
